@@ -1,8 +1,5 @@
-
 $(document).ready(function(){
-	$("card").hover(function(){
-                $(this).addClass("enter")
-            },function(){
-                $(this).removeClass("enter")
-            })
+	$('.card').addClass('rounded-lg');
+	$('.card').addClass('shadow');
+	$('.card').addClass('border-0');
 });
