@@ -1,7 +1,10 @@
 var i = 0;
 $(document).ready(function(){
 	shuffle(d_ans);
-	$('#ansrow > .card > .card-body').each(function () {
+	$('#ansrow > .card').each(function(index, el) {
+		$(this).load("card.html .one-card");
+	});
+	$('#ansrow > .card > .card-body').each(function (index, el) {
 		$(this).children('.one-answer').html(d_ans[i][0]);
 		$(this).children('.two-answer').html(d_ans[i][1]);
 		if(d_ans[i][2] == "n"){
