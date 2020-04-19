@@ -1,6 +1,9 @@
 var i = 0;
 $(document).ready(function(){
 	shuffle(d_ans);
+	d_ans.each(function(index, el) {
+		$('#ansrow').append("<div class="card my-3 c-answer"></div>");
+	});
 	$('#ansrow > .card').each(function(index, el) {
 		$(this).load("card.html #one");
 	});
