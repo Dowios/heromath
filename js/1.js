@@ -1,23 +1,19 @@
 var i = 0;
 $(document).ready(function(){
 	shuffle(d_ans);
-	$('#ansrow > .card').each(function(index, el) {
-		$(this).load("card.html .one-card");
-	});
-	$('#ansrow > .card > .card-body').each(function (index, el) {
-		alert("ok");
-		// $(this).children('.one-answer').html(d_ans[i][0]);
-		// $(this).children('.two-answer').html(d_ans[i][1]);
-		// if(d_ans[i][2] == "n"){
-		// 	$(this).children('.one-title').addClass('text-info');
-		// 	$(this).children('.two-title').addClass('text-info');
-		// 	$(this).parent('.card').addClass('stu');
-		// }else{
-		// 	$(this).children('.one-title').addClass('text-info');
-		// 	$(this).children('.two-title').addClass('text-info');
-		// 	$(this).parent('.card').addClass('tr');
-		// }
-		// i++;
+	$('#ansrow > .card > .card-body').each(function () {
+		$(this).children('.one-answer').html(d_ans[i][0]);
+		$(this).children('.two-answer').html(d_ans[i][1]);
+		if(d_ans[i][2] == "n"){
+			$(this).children('.one-title').addClass('text-info');
+			$(this).children('.two-title').addClass('text-info');
+			$(this).parent('.card').addClass('stu');
+		}else{
+			$(this).children('.one-title').addClass('text-info');
+			$(this).children('.two-title').addClass('text-info');
+			$(this).parent('.card').addClass('tr');
+		}
+		i++;
  	});
 	$('.card').addClass('rounded-lg');
 	$('.card').addClass('shadow');
