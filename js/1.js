@@ -2,7 +2,7 @@ var i = 0;
 $(document).ready(function(){
 	shuffle(d_ans);
 	$.each(d_ans, function(index, el) {
-		$('#ansrow').append("<div class="card my-3 c-answer"></div>");
+		$('#ansrow').append('<div class="card my-3 c-answer"></div>');
 	});
 	$('#ansrow > .card').each(function(index, el) {
 		$(this).load("card.html #one");
