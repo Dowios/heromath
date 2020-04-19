@@ -1,13 +1,10 @@
 var i = 0;
 $(document).ready(function(){
 	shuffle(d_ans);
-	$.each(d_ans, function(index, el) {
-		$('#ansrow').append('<div class="card my-3 c-answer"></div>');
-	});
 	$('#ansrow > .card').each(function(index, el) {
 		$(this).load("card.html .one-card");
 	});
-	$('.one-card').each(function (index, el) {
+	$('#ansrow > .card > .card-body').each(function (index, el) {
 		alert("ok");
 		// $(this).children('.one-answer').html(d_ans[i][0]);
 		// $(this).children('.two-answer').html(d_ans[i][1]);
