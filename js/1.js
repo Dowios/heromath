@@ -7,7 +7,7 @@ $(document).ready(function(){
 	$('#ansrow > .card').each(function(index, el) {
 		$(this).load("card.html .one-card");
 	});
-	$('#ansrow > .card > .card-body').each(function (index, el) {
+	$('.one-card').each(function (index, el) {
 		alert("ok");
 		// $(this).children('.one-answer').html(d_ans[i][0]);
 		// $(this).children('.two-answer').html(d_ans[i][1]);
