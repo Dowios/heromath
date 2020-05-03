@@ -20,67 +20,6 @@ $(document).ready(function(){
 	$('.card').addClass('border-0');
 });
 
-var ques1 = true;
-var ques2 = true;
-
-var student = true;
-var teacher = true;
-
-function q1() {
-	ques1 = !(ques1);
-	if(ques1){
-		$('.one-title').show();
-		$('.one-answer').show();
-		$('#q1').removeClass('o3');
-	}else{
-		$('.one-title').hide();
-		$('.one-answer').hide();
-		$('#q1').addClass('o3');
-	}
-}
-
-function q2() {
-	ques2 = !(ques2);
-	if(ques2){
-		$('.two-title').show();
-		$('.two-answer').show();
-		$('#q2').removeClass('o3');
-	}else{
-		$('.two-title').hide();
-		$('.two-answer').hide();
-		$('#q2').addClass('o3');
-	}
-}
-
-function stu() {
-	student = !(student);
-	if(student){
-		$('.stu').show();
-		$('#stu').removeClass('o3');
-	}else{
-		$('.stu').hide();
-		$('#stu').addClass('o3');
-	}
-}
-
-function tr() {
-	teacher = !(teacher);
-	if(teacher){
-		$('.tr').show();
-		$('#tr').removeClass('o3');
-	}else{
-		$('.tr').hide();
-		$('#tr').addClass('o3');
-	}
-}
-
-
-function shuffle(array) {
-	for (let i = array.length - 1; i > 0; i--) {
-		let j = Math.floor(Math.random() * (i + 1));
-		[array[i], array[j]] = [array[j], array[i]];
-	}
-}
 var d_ans = [
 ["嘗試自己三梯以來沒有嘗試過的事，試著用教程課所學在教案上","多看課本（參考資料），多花一些時間在想教案上","n"],
 ["一群信任的夥伴","適時的幫助他人，培養關係，學著踏出以往不敢踏出的一步踏出自己的舒適圈去認識新的人","n"],
@@ -106,4 +45,3 @@ var d_ans = [
 ["我期望可以得到做美勞的快樂、怎麼對付小孩且不生氣。","持續快樂的做美勞並鍛鍊有容乃大的精神。","n"],
 ["我期待我能透過幫助每位梯隊成員不論在教學、行政、美工或是談吐與待人處事方面都能有所收穫，來獲得自己的成就感","對學員：具體提出教案中可修改的問題點和提供建議、有空就可以協助他們製作美工、能多去看其他人試教並能給出具體有用的回饋、出梯時協助解決所有困難與解惑所有問題、盡可能認識和了解他們，透過觀察與回饋，讓他們能知道自己這段時間的成長<br><br>對學年：多聊聊天，提出問題讓大家反思，同時可以說說自己對於梯隊或活動行政的想法、提供自己的經驗<br><br>對五長：提供自己的經驗和觀念<br><br>對顧問：提供自己的經驗、詢問並提供解釋行政處理的觀念","y"],
 ["我希望能得到歸屬感，並且在新的角色中得到成就","陪伴年級的夥伴們，和他們一起參與很多不僅限於梯隊的事，和趴呢一起互相幫助與學習","y"]];
-

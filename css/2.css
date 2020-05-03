@@ -1,0 +1,6 @@
+body{
+	background-color: #84fb95;
+background-image: -webkit-linear-gradient(bottom right, #84fb95 0%, #cef576 74%);
+background-image: -o-linear-gradient(bottom right, #84fb95 0%, #cef576 74%);
+background-image: linear-gradient(to top left, #84fb95 0%, #cef576 74%);
+}
