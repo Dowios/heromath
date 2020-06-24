@@ -1,7 +1,9 @@
 
 body{
-	
-	background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+background-color: #ee8e6b;
+background-image: linear-gradient(315deg, #ee8e6b 0%, #ef6da0 74%);
+
+
 }
 
 .one-title{
@@ -12,7 +14,7 @@ body{
 }
 .banner{
 	width: inherit;
-	opacity: 60%;
+	background-color: rgba(0, 0, 0, 0.3);
 }
 .card{
 	transition: transform .2s;
